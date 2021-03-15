@@ -2,27 +2,57 @@
 
 
 def output_all_items(items):
-    pass  # TODO: replace this line with your code
+    for item in items:
+        print(item)
 
 
 def get_all_evens(nums):
-    pass  # TODO: replace this line with your code
+    even_nums = []
+    for num in nums:
+        if num % == 0:
+            even_nums.append(num)
+
+    return even_nums
 
 
 def get_odd_indices(items):
-    pass  # TODO: replace this line with your code
+    result = []
+    for idx in items:
+        if idx % 2 != 0:
+            result.append(items[idx])
+    
+    return result
 
 
 def print_as_numbered_list(items):
-    pass  # TODO: replace this line with your code
+    i = 1
+    for item in items:
+        print (f'{i}. {item}')
+
+        i += 1
+    
+return items
 
 
 def get_range(start, stop):
-    pass  # TODO: replace this line with your code
+    nums = []
+
+    for num in range(start, stop):
+        nums.append(num)
+    return nums
 
 
 def censor_vowels(word):
-    pass  # TODO: replace this line with your code
+    chars = []
+    vowels = "aeiou"
+
+  for letter in word: 
+    if letter in vowels:
+        chars.append('*')
+    else:
+        chars.append(letter)  
+  
+  return chars.join('')
 
 
 def snake_to_camel(string):
